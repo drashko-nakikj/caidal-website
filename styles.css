@@ -124,7 +124,10 @@ nav a.active { border-color: #fff; }
 }
 
 .section {
-  padding: 44px 0;
+  /* Vertical only — longhand so it doesn't clobber .prose's left/right padding
+     when an element is both .section and .prose (equal specificity, later wins). */
+  padding-top: 44px;
+  padding-bottom: 44px;
   scroll-margin-top: calc(var(--header-h) + 8px);
 }
 
@@ -248,7 +251,9 @@ p { margin: 0 0 1rem; }
 }
 
 @media (max-width: 820px) {
-  .nav-toggle { display: flex; }
+  /* margin-left:auto pins the hamburger to the far right, overriding the
+     3-item space-between spread (the absolutely-positioned nav collapses to 0). */
+  .nav-toggle { display: flex; margin-left: auto; }
   nav ul {
     position: absolute;
     top: var(--header-h);
