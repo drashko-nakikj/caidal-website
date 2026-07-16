@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Testers — caidal</title>
+  <meta name="description" content="Help shape caidal. Join the early testers trying it before anyone else.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="caidal home">
         <span class="logo-tile"><img src="assets/logo.png" alt="caidal"></span>
         <span class="wordmark">caidal</span>
       </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
       <nav>
         <ul id="primary-nav">
           <li><a href="index.html#mission">Mission</a></li>
@@ -29,8 +34,33 @@
   <main>
     <section class="section prose">
       <h2>Testers</h2>
-      <p class="lead">Coming soon.</p>
-      <p>Details for our early testers are on the way. <a href="index.html">Back to home →</a></p>
+      <p class="lead">Help shape caidal.</p>
+      <p>caidal is in early testing, and a small group of people are trying it before anyone else. If you're one of them — thank you. You're not just previewing an app; you're helping decide what it becomes.</p>
+
+      <div class="value-item">
+        <h3>What testing means.</h3>
+        <p>You'll get an early version of caidal on your iPhone through TestFlight (Apple's official app for trying apps before they launch). It comes preloaded with example visits, so there's something to explore the moment you open it. It's a work in progress, so expect a rough edge here and there — that's exactly the point.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>What we're hoping for.</h3>
+        <p>Just your honest first impressions. What clicked, what confused you, what felt slow or off, what you wished it did. Even “I didn't really get it” is genuinely valuable. There are no wrong answers, and you can't break anything.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>What you can count on.</h3>
+        <p>It's free, and always will be for testers. Your information stays on your device by default — sharing anything is your choice. There's no commitment: use it a lot, a little, or once. And we read every piece of feedback.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>How to join.</h3>
+        <p>Testing is invite-only for now, while the circle is small. Already invited? Check your email for a message from TestFlight and follow the steps — it takes about five minutes. Want in? Reach out and we'll be in touch as we open more spots.</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn" data-modal="tester-guide">Read the full setup guide</button>
+        <a class="link-btn" href="mailto:drashko.nakikj@gmail.com?subject=caidal%20beta%20invite">Request an invite &rarr;</a>
+      </div>
     </section>
   </main>
 
@@ -40,5 +70,62 @@
       <p class="disclaimer">caidal is a supportive companion, not a medical device. It does not replace professional medical care.</p>
     </div>
   </footer>
+
+  <!-- ─────────────── Tester setup guide (modal) ─────────────── -->
+  <div class="modal" id="tester-guide" hidden role="dialog" aria-modal="true" aria-labelledby="tester-guide-title">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="tester-guide-title">Setup guide</h3>
+        <button class="modal-close" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Welcome — and thank you for helping test caidal. This takes about 10 minutes, and no tech skills are needed. If you can install an app, you can do this.</p>
+        <p class="muted">You'll need an iPhone (or iPad) on a recent version of iOS. If anything won't install, it's usually because the phone needs a quick update: Settings → General → Software Update.</p>
+
+        <h4>1 · Get the app (three steps)</h4>
+        <p>caidal isn't in the App Store yet, so we use Apple's official tool for trying apps early, called <strong>TestFlight</strong>. It's made by Apple and completely safe.</p>
+        <ul class="step-list">
+          <li><strong>Install TestFlight</strong> — open the App Store, search “TestFlight,” and tap Get (it's free).</li>
+          <li><strong>Accept your invitation</strong> — open the “You're invited to test caidal” email on your iPhone and tap “View in TestFlight,” then Accept.</li>
+          <li><strong>Install caidal</strong> — tap Install. That's it — caidal is now on your home screen.</li>
+        </ul>
+        <p class="muted">Because it's a test version, caidal may update often. When it does, TestFlight will let you know — just tap Update.</p>
+
+        <h4>2 · Your first time opening caidal</h4>
+        <ul>
+          <li><strong>You can skip anything.</strong> If a screen feels like too much, look for “Skip and revisit in app” — you can always fill things in later.</li>
+          <li><strong>Setting up your Profile is optional but helpful</strong> — the more caidal knows, the more personalized its guidance. Share only what you're comfortable with.</li>
+          <li><strong>Take your time.</strong> Nothing is permanent, and you can change everything later.</li>
+        </ul>
+
+        <h4>3 · Apple Health (totally optional)</h4>
+        <p>caidal can connect to Apple Health to read your clinical records so its answers are more tailored to you. <strong>This is optional — the app works fully without it.</strong> If you'd rather not, just skip that step.</p>
+        <ul>
+          <li>If you'd like to try it, tap “Turn On All” (or pick items) when caidal asks, then Allow.</li>
+          <li>caidal only reads what you approve; you can turn it off anytime in Settings → Privacy &amp; Security → Health.</li>
+          <li>On an iPad, Apple Health isn't available — that's normal; everything else still works.</li>
+        </ul>
+
+        <h4>4 · Is my information safe?</h4>
+        <ul>
+          <li>Sharing is your choice, item by item — by default your data stays on your phone.</li>
+          <li>What you do share is sent securely to OpenAI only to generate your answers.</li>
+          <li>Your data is not used to train AI models, and not visible to anyone else.</li>
+          <li>You're always in control — review, remove, or delete anything at any time.</li>
+        </ul>
+
+        <h4>5 · How to share your thoughts</h4>
+        <p>This is the whole point — your honest first impressions. Two easy ways:</p>
+        <ul>
+          <li>Inside TestFlight: take a screenshot while using caidal, and TestFlight will offer to send it to us with a note.</li>
+          <li>Or just email us anything — what confused you, what you liked, what felt off. Even “I didn't get it” is incredibly useful.</li>
+        </ul>
+
+        <p>That's everything. Thank you for being early — the first people to believe in something are the ones who make it real. 🙌</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

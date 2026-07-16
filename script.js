@@ -42,3 +42,29 @@ if (sections.length && 'IntersectionObserver' in window) {
 
   sections.forEach(s => observer.observe(s));
 }
+
+// ─────────────── Modals ───────────────
+function closeModal(m) {
+  m.hidden = true;
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('[data-modal]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const m = document.getElementById(btn.getAttribute('data-modal'));
+    if (m) {
+      m.hidden = false;
+      document.body.style.overflow = 'hidden';   // lock background scroll
+    }
+  });
+});
+
+document.querySelectorAll('.modal').forEach(m => {
+  // Click the dark overlay (outside the dialog) to close.
+  m.addEventListener('click', e => { if (e.target === m) closeModal(m); });
+  m.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => closeModal(m)));
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.querySelectorAll('.modal:not([hidden])').forEach(closeModal);
+});

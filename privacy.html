@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — caidal</title>
+  <title>Policy — caidal</title>
+  <meta name="description" content="What caidal stands for — transparency, your data in your control, and never a replacement for clinical care.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="caidal home">
         <span class="logo-tile"><img src="assets/logo.png" alt="caidal"></span>
         <span class="wordmark">caidal</span>
       </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
       <nav>
         <ul id="primary-nav">
           <li><a href="index.html#mission">Mission</a></li>
@@ -28,9 +33,43 @@
 
   <main>
     <section class="section prose">
-      <h2>Privacy Policy</h2>
-      <p class="lead">Coming soon.</p>
-      <p>We're putting the finishing touches on this page. <a href="index.html">Back to home →</a></p>
+      <h2>Policy</h2>
+      <p class="lead">What we stand for.</p>
+      <p>caidal handles something deeply personal — your health. So we hold ourselves to a few principles, and we'd rather state them plainly than bury them.</p>
+
+      <div class="value-item">
+        <h3>Transparency, always.</h3>
+        <p>You can see what caidal is doing and why. When it draws on your records, it shows its sources. When it's uncertain, it says so. Nothing important is hidden behind a black box.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>Your data is yours.</h3>
+        <p>Your information stays on your device by default. Sharing anything with the assistant is opt-in, item by item — your choice, every time. You can review, edit, or delete anything whenever you want, including removing your data in bulk. We don't sell your data, and we don't run ads against it.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>Private by design.</h3>
+        <p>When you do choose to share something to get an answer, it's sent securely and used only to help you. It isn't used to train AI models, and it isn't visible to anyone else. Connecting Apple Health is optional, read-only, and never used for advertising.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>Reliable, and honest about its limits.</h3>
+        <p>caidal is built to be grounded — anchored in your own records rather than generic guesses, and clear about what it does and doesn't know. It's a tool to help you think and prepare, not an oracle. We'd rather be trustworthy than impressive.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>Never a replacement for your doctor.</h3>
+        <p>caidal is a supportive companion — not a medical device. It does not diagnose, treat, or prescribe, and it never replaces the judgment of a qualified clinician. For anything urgent, contact a health professional or emergency services.</p>
+      </div>
+
+      <div class="value-item">
+        <h3>On your side.</h3>
+        <p>Our job is to serve you — the patient. Every decision we make starts from that. If something ever feels off, tell us; we're building this with you, not just for you.</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn" data-modal="privacy-full">Read the full Privacy Policy</button>
+      </div>
     </section>
   </main>
 
@@ -40,5 +79,72 @@
       <p class="disclaimer">caidal is a supportive companion, not a medical device. It does not replace professional medical care.</p>
     </div>
   </footer>
+
+  <!-- ─────────────── Full Privacy Policy (modal) ─────────────── -->
+  <div class="modal" id="privacy-full" hidden role="dialog" aria-modal="true" aria-labelledby="privacy-full-title">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="privacy-full-title">Privacy Policy</h3>
+        <button class="modal-close" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="muted">Last updated: July 16, 2026</p>
+        <p>caidal (“caidal,” “we,” “us”) is a companion app that helps you prepare for, understand, and follow through on your medical visits. This Privacy Policy explains what information the app handles, how it's used, and the choices and controls you have.</p>
+
+        <h4>Who we are</h4>
+        <p>caidal is developed by Drashko Nakikj, based in New York, USA. You can reach us anytime at <strong>drashko.nakikj@gmail.com</strong>.</p>
+
+        <h4>The short version</h4>
+        <ul>
+          <li>Your information stays <strong>on your device</strong> unless you choose to share it.</li>
+          <li>Sharing with the AI assistant is <strong>opt-in</strong>, and you can review or delete anything at any time.</li>
+          <li>We <strong>do not sell</strong> your data and <strong>do not use it for advertising.</strong></li>
+          <li>Connecting <strong>Apple Health</strong> is optional, read-only, and never used for ads.</li>
+          <li>caidal is <strong>not a medical device</strong> and does not replace professional care.</li>
+        </ul>
+
+        <h4>Information caidal handles</h4>
+        <p>Depending on how you use the app, caidal may handle: profile information you enter; visit information you create (details, questions, notes, tags, and audio you choose to record); health and personal data you add or import — including clinical records from Apple Health; your conversations with the assistant; and basic app activity needed to run the service.</p>
+
+        <h4>Where your information is stored</h4>
+        <p>By default, your information is stored <strong>locally on your device.</strong> caidal does not upload it to our servers or to third parties simply because you added it to the app.</p>
+
+        <h4>When information is shared — and with whom</h4>
+        <p><strong>AI assistant (OpenAI).</strong> When you choose to use the assistant, the relevant content is sent — through caidal's secure server — to OpenAI, which processes it to generate responses. This is opt-in and item-by-item. OpenAI does not use this content to train its models, and it is not visible to other users. OpenAI may retain content briefly to monitor for misuse, per its API policies. caidal uses this content only to provide the app's features — never for advertising, marketing, or data mining.</p>
+        <p><strong>Apple Health (optional).</strong> If you connect Apple Health, caidal reads only the records you approve, with your explicit permission. caidal never writes data back, never stores it in iCloud, and never uses Health data for advertising. Clinical records are sent to OpenAI only if you choose to share them with the assistant, and solely to provide the feature you requested.</p>
+        <p><strong>Apple (during testing).</strong> While caidal is distributed through TestFlight, Apple may provide us with crash logs and basic usage statistics to help us improve the app.</p>
+        <p>We do not sell your information, and we do not share it with advertisers or data brokers.</p>
+
+        <h4>Your choices and controls</h4>
+        <ul>
+          <li>Share nothing by default — your data stays on your device until you decide otherwise.</li>
+          <li>Opt in per item — you choose exactly what the assistant can use.</li>
+          <li>Review, edit, and delete anything at any time, including a built-in Data Manager for bulk deletion.</li>
+          <li>Disconnect Apple Health anytime in Settings → Privacy &amp; Security → Health.</li>
+          <li>Delete everything by removing your data in the app and/or deleting the app.</li>
+        </ul>
+
+        <h4>Data retention</h4>
+        <p>Information stays on your device until you delete it or remove the app. Content sent to OpenAI is handled per its retention policies (typically deleted within a short window). Contact us at <strong>drashko.nakikj@gmail.com</strong> with any request about your information.</p>
+
+        <h4>Security</h4>
+        <p>We take reasonable measures to protect your information, including keeping data on your device by default and transmitting it over encrypted connections (HTTPS/TLS) when it is shared. No method of storage or transmission is ever 100% secure, but we design caidal to minimize what leaves your device.</p>
+
+        <h4>Minors</h4>
+        <p>caidal is intended for adults. If you are a minor (under 18), please do not use the app. We do not knowingly collect information from anyone under 18.</p>
+
+        <h4>Not medical advice</h4>
+        <p>caidal is a supportive tool and not a medical device. It does not diagnose, treat, or prescribe, and it does not replace the judgment of a qualified healthcare professional. For anything urgent, contact a health professional or emergency services.</p>
+
+        <h4>Changes to this policy</h4>
+        <p>We may update this policy as caidal evolves. Material changes will be posted here with a new “Last updated” date.</p>
+
+        <h4>Contact</h4>
+        <p>Questions or requests about your privacy? Email us at <strong>drashko.nakikj@gmail.com</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
