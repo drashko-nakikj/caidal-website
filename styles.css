@@ -362,3 +362,6 @@ p { margin: 0 0 1rem; }
 .modal-body ul { margin: 0 0 1em; padding-left: 1.25em; }
 .modal-body li { margin-bottom: .4em; line-height: 1.55; }
 .modal-body .muted { color: var(--muted); font-size: .9rem; }
+
+/* caidal brand name — always blue + bold inside the step-by-step testing guide */
+.brand-ink { color: var(--accent); font-weight: 700; }
